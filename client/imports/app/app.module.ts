@@ -8,6 +8,7 @@ import {AccountsModule} from 'angular2-meteor-accounts-ui';
 import {AppComponent} from './app.component';
 import {routes, ROUTES_PROVIDERS} from './app.routes';
 import {PARTIES_DECLARATIONS} from './parties';
+import {Ng2PaginationModule} from "ng2-pagination";
 
 @NgModule({
     imports: [
@@ -15,8 +16,8 @@ import {PARTIES_DECLARATIONS} from './parties';
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot(routes),
-        AccountsModule
-
+        AccountsModule,
+        Ng2PaginationModule
     ],
     declarations: [
         AppComponent,
