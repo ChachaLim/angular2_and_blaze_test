@@ -16,16 +16,11 @@ function buildQuery(partyId?:string): Object{
             {
                 //party is pulbic
                 public: true
-            },
-            {
+            }, {
                 //curent user is the owner
                 $and:[
-                    {
-                        owner: this.userId
-                    },
-                    {
-                        owner:{ $exists: true}
-                    }
+                    {owner: this.userId},
+                    {owner:{ $exists: true}}
                 ]
             }
         ]

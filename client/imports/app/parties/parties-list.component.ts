@@ -13,7 +13,7 @@ import template from './parties-list.component.html';
     template
 })
 export class PartiesListComponent implements OnInit, OnDestroy{
-    parties: Observable<Party[]>;
+    parties: Observable<Party[][]>;
     partiesSub: Subscription;
 
 
