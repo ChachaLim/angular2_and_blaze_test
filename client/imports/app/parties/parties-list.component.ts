@@ -24,8 +24,8 @@ interface Options extends Pagination {
     selector: 'parties-list',
     template
 })
-export class PartiesListComponent implements OnInit, OnDestroy {
-    parties: Observable<Party[][]>;
+export class PartiesListComponent implements OnInit, OnDestroy{
+    parties: Observable<Party[]>;
     partiesSub: Subscription;
     pageSize: Subject<number> = new Subject<number>();
     curPage: Subject<number> = new Subject<number>();
